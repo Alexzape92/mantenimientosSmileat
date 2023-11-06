@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.smileat.mantenimientos.VerPreventivosController">
+    <top>
+        <StackPane>
+            <HBox alignment="CENTER">
+                <Label fx:id="lblTitulo" />
+            </HBox>
+        </StackPane>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20.0">
+            <Label text=""/>
+            <TableView fx:id="tbPreventivos" >
+                <columns>
+                    <TableColumn fx:id="tcDescripcion" text="DESCRIPCIÓN"/>
+                    <TableColumn fx:id="tcFrecuencia" text="FRECUENCIA"/>
+                    <TableColumn fx:id="tcTiempo" text="TIEMPO ESTIMADO"/>
+                    <TableColumn fx:id="tcIconos" text="ACCIONES"/>
+                </columns>
+            </TableView>
+            <Button fx:id="btnNuevo" />
+        </VBox>
+    </center>
+</BorderPane>

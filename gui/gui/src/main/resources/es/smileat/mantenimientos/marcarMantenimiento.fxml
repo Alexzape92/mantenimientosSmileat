@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.smileat.mantenimientos.MarcarMantenimientoController" spacing="10.0" >
+    <TextField fx:id="txtFecha" />
+    <ChoiceBox fx:id="cbResultado" />
+    <TextField fx:id="txtComentarios" />
+    <ChoiceBox fx:id="cbEmpleado" />
+    <ChoiceBox fx:id="cbSupervisor" />
+    <TextField fx:id="txtTiempo" />
+    <TextField fx:id="txtMaquina" />
+    <ChoiceBox fx:id="cbTipo" />
+    <StackPane fx:id="spBoton" alignment="CENTER">
+        <Button fx:id="btnGuardar" />
+    </StackPane>
+</VBox>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.smileat.mantenimientos.VerMaquinasController">
+    <top>
+        <StackPane>
+            <HBox alignment="CENTER">
+                <Label fx:id="lblTitulo" />
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <ImageView fx:id="imgAtras">
+                    <image>
+                        <Image url="@img/atras.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+        </StackPane>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20.0">
+            <Label text=""/>
+            <HBox alignment="TOP_RIGHT" spacing="20.0">
+                <ChoiceBox fx:id="cbMaquinas" />
+                <Label text=""/>
+            </HBox>
+            <TableView fx:id="tbMaquinas" >
+                <columns>
+                    <TableColumn fx:id="tcId" text="ID"/>
+                    <TableColumn fx:id="tcModelo" text="MODELO"/>
+                    <TableColumn fx:id="tcIncidencias" text="INCIDENCIAS"/>
+                    <TableColumn fx:id="tcSala" text="SALA"/>
+                    <TableColumn fx:id="tcIconos" text="ACCIONES"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

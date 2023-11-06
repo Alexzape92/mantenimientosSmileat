@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.smileat.mantenimientos.AnnadirMaquinaController">
+    <top>
+        <StackPane>
+            <HBox alignment="CENTER">
+                <Label fx:id="lblTitulo" />
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <ImageView fx:id="imgAtras">
+                    <image>
+                        <Image url="@img/atras.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+        </StackPane>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="16.5">
+            <TextField fx:id="txtId" maxWidth="400" maxHeight="110" />
+            <TextField fx:id="txtModelo" maxWidth="400" maxHeight="110" />
+            <TextField fx:id="txtIncidencias" maxWidth="400" maxHeight="110" />
+            <TextField fx:id="txtSala" maxWidth="400" maxHeight="110" />
+            <Button fx:id="btnGuardar" />
+        </VBox>
+    </center>
+</BorderPane>

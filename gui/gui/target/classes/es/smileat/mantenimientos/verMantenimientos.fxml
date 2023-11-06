@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.smileat.mantenimientos.VerMantenimientosController">
+    <top>
+        <StackPane>
+            <HBox alignment="CENTER">
+                <Label fx:id="lblTitulo" />
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <ImageView fx:id="imgAtras">
+                    <image>
+                        <Image url="@img/atras.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+        </StackPane>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20.0">
+            <Label text=""/>
+            <HBox alignment="TOP_RIGHT" spacing="20.0">
+                <ChoiceBox fx:id="cbMantenimientos" />
+                <TextField fx:id="txtMaquina" />
+                <Button fx:id="btnBuscar" text="BUSCAR" />
+            </HBox>
+            <TableView fx:id="tbMantenimientos" >
+                <columns>
+                    <TableColumn fx:id="tcMaquina" text="MAQUINA"/>
+                    <TableColumn fx:id="tcFecha" text="FECHA"/>
+                    <TableColumn fx:id="tcResultado" text="RESULTADO"/>
+                    <TableColumn fx:id="tcComentarios" text="COMENTARIOS"/>
+                    <TableColumn fx:id="tcTipo" text="TIPO"/>
+                    <TableColumn fx:id="tcEmpleado" text="EMPLEADO"/>
+                    <TableColumn fx:id="tcSupervisor" text="SUPERVISOR"/>
+                    <TableColumn fx:id="tcTiempo" text="TIEMPO"/>
+                    <TableColumn fx:id="tcDescripcion" text="DESCRIPCIÓN"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

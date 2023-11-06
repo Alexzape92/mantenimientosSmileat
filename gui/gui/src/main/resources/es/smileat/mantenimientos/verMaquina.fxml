@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.smileat.mantenimientos.VerMaquinaController" >
+    <Label fx:id="lblId" />
+    <Label fx:id="lblModelo" />
+    <Label fx:id="lblPeriodo" />
+    <Label fx:id="lblDescripcion" />
+    <Label fx:id="lblTiempo" />
+    <Label fx:id="lblSala" />
+    <Button fx:id="btnMarcar" />
+</VBox>

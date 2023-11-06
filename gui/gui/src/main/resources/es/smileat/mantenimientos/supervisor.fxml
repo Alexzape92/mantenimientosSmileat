@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.smileat.mantenimientos.SupervisorController" >
+    <top>
+        <VBox>
+            <!-- Blank space-->
+            <Label text = "" />
+            <StackPane>
+                <HBox alignment="CENTER_LEFT">
+                    <Label fx:id="lblInfo" />
+                </HBox>
+                <HBox alignment="CENTER">
+                    <ImageView fitWidth="270" fitHeight="104">
+                        <!-- Set the path to your image file -->
+                        <image>
+                            <Image url="@img/logo.png" />
+                        </image>
+                    </ImageView>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                    <Label fx:id="lblBienvenida" />
+                    <Label fx:id="lblUsuario" />
+                    <ImageView fx:id="imgCerrarsesion">
+                        <!-- Set the path to your image file -->
+                        <image>
+                            <Image url="@img/cerrarsesion.png" />
+                        </image>
+                    </ImageView>
+                </HBox>
+            </StackPane>
+        </VBox>
+    </top>
+    <left>
+        <VBox alignment="TOP_CENTER" spacing="50.0">
+            <!-- Blank space-->
+            <Label text = "" />
+            <HBox alignment ="CENTER" spacing="15.0">
+                <Label fx:id="lblMaquinas" />
+                <ImageView fitWidth="50" fitHeight="50">
+                    <!-- Set the path to your image file -->
+                    <image>
+                        <Image url="@img/maquina.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+            <!-- Blank spaces-->
+            <Label text = "" />
+            <!-- Options-->
+            <VBox alignment="CENTER" spacing="30.0">
+                <Button fx:id="btnVerMaquinas" />
+                <Button fx:id="btnAnadirMaquina" />
+            </VBox>
+        </VBox>
+    </left>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="50.0">
+            <!-- Blank space-->
+            <Label text = "" />
+            <HBox alignment="CENTER" spacing="15.0">
+                <Label fx:id="lblMantenimientos" />
+                <ImageView fitWidth="50" fitHeight="50">
+                    <!-- Set the path to your image file -->
+                    <image>
+                        <Image url="@img/mantenimiento.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+            <!-- Blank spaces-->
+            <Label text = "" />
+            <!-- Options-->
+            <VBox alignment="CENTER" spacing="30.0">
+                <Button fx:id="btnVerPrograma" />
+                <Button fx:id="btnVerMantenimientos" />
+                <Button fx:id="btnAnadirMantenimiento" />
+            </VBox>
+        </VBox>
+    </center>
+    <right>
+        <VBox alignment="TOP_CENTER" spacing="50.0">
+            <!-- Blank space-->
+            <Label text = "" />
+            <HBox alignment="CENTER" spacing="15.0">
+                <Label fx:id="lblUsuarios" />
+                <ImageView fitWidth="50" fitHeight="50">
+                    <!-- Set the path to your image file -->
+                    <image>
+                        <Image url="@img/usuario.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+            <!-- Blank spaces-->
+            <Label text = "" />
+            <!-- Options-->
+            <VBox alignment="CENTER" spacing="30.0">
+                <Button fx:id="btnVerUsuarios" />
+            </VBox>
+        </VBox>
+    </right>
+</BorderPane>
